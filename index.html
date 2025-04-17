@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aileen's Website</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Logo Aileen">
+    </div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#profile">Our Profile</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Message Us</a>
+    </nav>
+  </header>
+
+  <section id="home" class="banner-section">
+    <h1>Hi Aileen, Welcome to My Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+    <img src="banner.jpg" alt="Banner" class="banner-img">
+  </section>
+
+  <section id="profile">
+    <h2>Our Profile</h2>
+    <p><strong>About:</strong> Komunitas kreatif yang mengangkat semangat perempuan dan keindahan bunga dalam karya.</p>
+    <p><strong>Vision:</strong> Menjadi wadah utama bagi perempuan untuk berkembang di dunia kreatif dan digital.</p>
+    <p><strong>Mission:</strong> Mendorong ekspresi diri melalui desain, teknologi, dan kolaborasi yang mendukung pemberdayaan perempuan di era digital.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Our Headquarter</h2>
+    <div class="cities">
+      <div class="city">Jakarta</div>
+      <div class="city">Bandung</div>
+      <div class="city">Surabaya</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Message Us</h2>
+    <form id="contactForm">
+      <label>Nama: <input type="text" id="name" required></label>
+      <label>Tanggal Lahir: <input type="date" id="dob" required></label>
+      <label>Jenis Kelamin:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      </div>
+      <label>Pesan: <textarea id="message" required></textarea></label>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formResult"></div>
+  </section>
+
+  <footer>
+    <p>Created by Aileen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
